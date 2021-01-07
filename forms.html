@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email"> Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            Salary: <input type="number" name="myNumber" id="number">
+        </div>
+        <br>
+        <div>
+            Are yoy 18?: <input type="checkbox" name="checkboc" id="check" checked>
+        </div>
+        <br>
+        <div>
+            gender: <input type="radio" name="myGender" id="gender">Male <input type="radio" name="myGender"
+                id="gender">Female
+            <input type="radio" name="myGender" id="gender">Other
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" name="mypassword" id="pass">
+        </div>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="reset">
+        <br>
+        <div>
+            Write about yourself <br><textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">please select</label>
+
+            <select name="mycar" id="car">
+                <option value="indica">indica</option>
+                <option value="audi" selected>audi</option>
+            </select>
+        </div>
+    </form>
+
+</body>
+
+</html>

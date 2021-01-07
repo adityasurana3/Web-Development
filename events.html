@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas, aut vero voluptatum aliquid, harum quidem praesentium laborum molestias fuga reprehenderit repellendus recusandae! Sint, vel! Beatae, quidem, adipisci eum quo harum error dolor ut reiciendis saepe sequi a alias sint sunt quae! Accusamus molestiae recusandae explicabo! Amet iusto deserunt repellat aut omnis, itaque unde eos ratione necessitatibus, hic fugiat. Dignissimos minima tempora recusandae, modi expedita ratione architecto aspernatur eum quaerat fuga laboriosam adipisci optio voluptatibus similique magni necessitatibus quod non nobis, placeat sapiente ut distinctio, debitis praesentium tenetur? Similique enim architecto ipsum voluptatem ratione explicabo eum sed tempora iste quisquam molestias iusto, pariatur distinctio sit ea asperiores corporis eius porro a doloremque facere minima soluta officia. Eius velit quia quae ea consequatur numquam ipsum dignissimos dolorum commodi iure! Blanditiis dignissimos corporis molestias quia repellendus debitis cumque quos repudiandae quaerat sit culpa, incidunt et facere expedita quidem neque ipsam dolor, nemo pariatur ut corrupti reiciendis a. Repudiandae, harum? Accusamus sint recusandae molestiae optio fuga. Dolorem optio impedit, asperiores voluptatum eveniet ad beatae a necessitatibus numquam nulla expedita illo et provident itaque, doloribus reiciendis nisi ab excepturi explicabo omnis! Obcaecati, placeat iure. Nisi perspiciatis ut, laboriosam officia praesentium deleniti nesciunt enim facere totam et qui corporis ipsam, labore quia! Rem nesciunt porro, repellendus nisi libero nam ex officiis a ad ducimus consectetur amet eaque excepturi neque veritatis, pariatur minima magni, voluptatibus odit. Dolor vel neque id >minus! Aperiam, reiciendis vero magni minus at officia non esse? In sit alias quisquam? Quia, ullam.</p>
+    </div>
+    <button type="submit" id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+        let para= document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log("Mouse Iside")
+        });
+        para.addEventListener('mouseout', function run(){
+            console.log("Mouse Outside")
+        });
+        function hide(){
+            let para = document.getElementById('para');
+            if(para.style.display!='none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
